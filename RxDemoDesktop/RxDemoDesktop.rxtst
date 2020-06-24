@@ -56,6 +56,14 @@
 			name="StartAUT"
 			ref="183fe4d8-b6f0-4106-93ef-4355d8636d64"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="34fe48e0-ceec-42a4-9632-1a2f384c3bac"
+					variableid="dacf3ab9-150b-40b4-99d7-3cfb44183281"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="ac6772e3-85e2-4a63-b806-a3b2f1711454"
@@ -105,6 +113,14 @@
 			name="CloseAUT"
 			ref="7acb8ccf-3277-4429-b04d-dbdb3492376d"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="34fe48e0-ceec-42a4-9632-1a2f384c3bac"
+					variableid="07bf245d-565e-41db-a797-9f92ce673b20"
+					variablename="CloseAutProcessIDVar">
+					</var>
+				</databinding>
 			</testmodule>
 			<teardown
 			id="e397fa6f-a362-46ac-a96b-764eab825a22"
