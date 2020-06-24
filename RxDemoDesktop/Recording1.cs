@@ -79,6 +79,54 @@ namespace RxDemoDesktop
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.TestDatabase' at 39;6.", repo.RxMainFrame.TestDatabaseInfo, new RecordItemIndex(0));
+            repo.RxMainFrame.TestDatabase.Click("39;6");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.FirstName' at 64;7.", repo.RxMainFrame.RxTabStandard.FirstNameInfo, new RecordItemIndex(1));
+            repo.RxMainFrame.RxTabStandard.FirstName.Click("64;7");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'John' with focus on 'RxMainFrame.RxTabStandard.FirstName'.", repo.RxMainFrame.RxTabStandard.FirstNameInfo, new RecordItemIndex(2));
+            repo.RxMainFrame.RxTabStandard.FirstName.PressKeys("John");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.LastName' at 32;6.", repo.RxMainFrame.RxTabStandard.LastNameInfo, new RecordItemIndex(3));
+            repo.RxMainFrame.RxTabStandard.LastName.Click("32;6");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Walker' with focus on 'RxMainFrame.RxTabStandard.LastName'.", repo.RxMainFrame.RxTabStandard.LastNameInfo, new RecordItemIndex(4));
+            repo.RxMainFrame.RxTabStandard.LastName.PressKeys("Walker");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.Abrir' at 3;8.", repo.RxMainFrame.RxTabStandard.AbrirInfo, new RecordItemIndex(5));
+            repo.RxMainFrame.RxTabStandard.Abrir.Click("3;8");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Sales' at 155;4.", repo.List1000.SalesInfo, new RecordItemIndex(6));
+            repo.List1000.Sales.Click("155;4");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.UpDownEdit' at 40;9.", repo.RxMainFrame.RxTabStandard.UpDownEditInfo, new RecordItemIndex(7));
+            repo.RxMainFrame.RxTabStandard.UpDownEdit.Click("40;9");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}{NumPad4 down}{NumPad8 down}{NumPad4 up}{NumPad8 up}' with focus on 'RxMainFrame.RxTabStandard.UpDownEdit'.", repo.RxMainFrame.RxTabStandard.UpDownEditInfo, new RecordItemIndex(8));
+            repo.RxMainFrame.RxTabStandard.UpDownEdit.PressKeys("{Back}{NumPad4 down}{NumPad8 down}{NumPad4 up}{NumPad8 up}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.RdbMale' at 8;7.", repo.RxMainFrame.RxTabStandard.RdbMaleInfo, new RecordItemIndex(9));
+            repo.RxMainFrame.RxTabStandard.RdbMale.Click("8;7");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.BtnAddPerson' at 53;10.", repo.RxMainFrame.BtnAddPersonInfo, new RecordItemIndex(10));
+            repo.RxMainFrame.BtnAddPerson.Click("53;10");
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'RxMainFrame.LblNumberOfPersonsNumber'.", repo.RxMainFrame.LblNumberOfPersonsNumberInfo, new RecordItemIndex(11));
+            Validate.AttributeEqual(repo.RxMainFrame.LblNumberOfPersonsNumberInfo, "Text", "1");
+            Delay.Milliseconds(100);
+            
         }
 
 #region Image Feature Data
