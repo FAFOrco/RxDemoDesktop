@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="7acb8ccf-3277-4429-b04d-dbdb3492376d"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="RxDemoDesktop">
+	</codegen>
+	<variables>
+		<var
+		id="07bf245d-565e-41db-a797-9f92ce673b20"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="15cdbe12-e911-4011-a7f9-eb7ec425ad29">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="c72dd101-a1fb-45bd-ba75-76b411c98590"
+	name="RxDemoDesktopRepository"
+	relativepath="RxDemoDesktopRepository.rxrep">
+		<codegen
+		classname="RxDemoDesktopRepository"
+		namespace="RxDemoDesktop">
+		</codegen>
+		<rootfolder
+		id="53ceb678-4ae7-4d4a-82dc-523221a01652"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="RxDemoDesktopRepository"
+id="c72dd101-a1fb-45bd-ba75-76b411c98590">
+  <codegen
+  classname="RxDemoDesktopRepository"
+  namespace="RxDemoDesktop"/>
+  <rootfolder
+  name="Root"
+  id="53ceb678-4ae7-4d4a-82dc-523221a01652"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+      <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

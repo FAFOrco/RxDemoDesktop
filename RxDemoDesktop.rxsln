@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+# Ranorex Studio 9.2.0
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxDemoDesktop", "RxDemoDesktop\RxDemoDesktop.csproj", "{5C082E35-1028-4C47-ACAD-9F3B54723123}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5E1B839C-15F3-4A32-AD73-A8647D65D591}"
+	ProjectSection(SolutionItems) = postProject
+		Ranorex = .\Ranorex.rxsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C082E35-1028-4C47-ACAD-9F3B54723123}.Debug|x86.Build.0 = Debug|x86
+		{5C082E35-1028-4C47-ACAD-9F3B54723123}.Debug|x86.ActiveCfg = Debug|x86
+		{5C082E35-1028-4C47-ACAD-9F3B54723123}.Release|x86.Build.0 = Release|x86
+		{5C082E35-1028-4C47-ACAD-9F3B54723123}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

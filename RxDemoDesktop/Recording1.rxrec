@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="3f159fe7-6652-4641-bc45-1c8cdde084e1"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="RxDemoDesktop">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="c72dd101-a1fb-45bd-ba75-76b411c98590"
+	name="RxDemoDesktopRepository"
+	relativepath="RxDemoDesktopRepository.rxrep">
+		<codegen
+		classname="RxDemoDesktopRepository"
+		namespace="RxDemoDesktop">
+		</codegen>
+		<rootfolder
+		id="53ceb678-4ae7-4d4a-82dc-523221a01652"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
