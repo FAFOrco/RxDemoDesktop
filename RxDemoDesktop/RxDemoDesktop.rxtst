@@ -41,6 +41,9 @@
 			<testcase
 			id="6d5a3590-e132-4ce7-89ce-cb41ee7e5f6b"
 			name="TC02">
+				<description>
+					<![CDATA[<p>DB Management - Add and Delete&nbsp;Entry</p>]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="9ba07160-53a1-4188-afc6-d9e715b87125"

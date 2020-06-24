@@ -88,16 +88,16 @@ namespace RxDemoDesktop.DB_Management
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'John' with focus on 'RxMainFrame.RxTabStandard.FirstName'.", repo.RxMainFrame.RxTabStandard.FirstNameInfo, new RecordItemIndex(2));
-            repo.RxMainFrame.RxTabStandard.FirstName.PressKeys("John");
-            Delay.Milliseconds(0);
+            repo.RxMainFrame.RxTabStandard.FirstName.PressKeys("John", 10);
+            Delay.Milliseconds(60);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.LastName' at 32;6.", repo.RxMainFrame.RxTabStandard.LastNameInfo, new RecordItemIndex(3));
             repo.RxMainFrame.RxTabStandard.LastName.Click("32;6");
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Walker' with focus on 'RxMainFrame.RxTabStandard.LastName'.", repo.RxMainFrame.RxTabStandard.LastNameInfo, new RecordItemIndex(4));
-            repo.RxMainFrame.RxTabStandard.LastName.PressKeys("Walker");
-            Delay.Milliseconds(0);
+            repo.RxMainFrame.RxTabStandard.LastName.PressKeys("Walker", 10);
+            Delay.Milliseconds(40);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.Abrir' at 3;8.", repo.RxMainFrame.RxTabStandard.AbrirInfo, new RecordItemIndex(5));
             repo.RxMainFrame.RxTabStandard.Abrir.Click("3;8");
@@ -112,8 +112,8 @@ namespace RxDemoDesktop.DB_Management
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}{NumPad4 down}{NumPad8 down}{NumPad4 up}{NumPad8 up}' with focus on 'RxMainFrame.RxTabStandard.UpDownEdit'.", repo.RxMainFrame.RxTabStandard.UpDownEditInfo, new RecordItemIndex(8));
-            repo.RxMainFrame.RxTabStandard.UpDownEdit.PressKeys("{Back}{NumPad4 down}{NumPad8 down}{NumPad4 up}{NumPad8 up}");
-            Delay.Milliseconds(0);
+            repo.RxMainFrame.RxTabStandard.UpDownEdit.PressKeys("{Back}{NumPad4 down}{NumPad8 down}{NumPad4 up}{NumPad8 up}", 10);
+            Delay.Milliseconds(50);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.RdbMale' at 8;7.", repo.RxMainFrame.RxTabStandard.RdbMaleInfo, new RecordItemIndex(9));
             repo.RxMainFrame.RxTabStandard.RdbMale.Click("8;7");

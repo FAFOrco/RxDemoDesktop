@@ -517,7 +517,7 @@ KKKKACiiigAooooA/9k=
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="10ms"
 		searchpropertyid="6a5e2daa-9273-43e7-9505-6b4f3dc4d8d6">
 			<comment>
 			</comment>
@@ -764,7 +764,7 @@ ZozRRQBLb/69/wDcX+bVYoooAan3n/3v6CnUUUAFFFFABRRRQAUUUUAFFFFAH//Z
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="10ms"
 		searchpropertyid="6a5e2daa-9273-43e7-9505-6b4f3dc4d8d6">
 			<comment>
 			</comment>
@@ -2323,7 +2323,7 @@ UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="10ms"
 		searchpropertyid="67863a30-e3fe-4c54-b5e2-d7d2cad078c8">
 			<comment>
 			</comment>

@@ -88,16 +88,16 @@ namespace RxDemoDesktop.DB_Management
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Karina'.", new RecordItemIndex(2));
-            Keyboard.Press("Karina");
-            Delay.Milliseconds(0);
+            Keyboard.Press("Karina", 10);
+            Delay.Milliseconds(40);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.LastName' at CenterLeft.", repo.RxMainFrame.RxTabStandard.LastNameInfo, new RecordItemIndex(3));
             repo.RxMainFrame.RxTabStandard.LastName.Click(Location.CenterLeft);
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Masoko'.", new RecordItemIndex(4));
-            Keyboard.Press("Masoko");
-            Delay.Milliseconds(0);
+            Keyboard.Press("Masoko", 10);
+            Delay.Milliseconds(40);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.Abrir' at Center.", repo.RxMainFrame.RxTabStandard.AbrirInfo, new RecordItemIndex(5));
             repo.RxMainFrame.RxTabStandard.Abrir.Click();
@@ -112,8 +112,8 @@ namespace RxDemoDesktop.DB_Management
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}28' with focus on 'RxMainFrame.RxTabStandard.UpDownEdit'.", repo.RxMainFrame.RxTabStandard.UpDownEditInfo, new RecordItemIndex(8));
-            repo.RxMainFrame.RxTabStandard.UpDownEdit.PressKeys("{Back}28");
-            Delay.Milliseconds(0);
+            repo.RxMainFrame.RxTabStandard.UpDownEdit.PressKeys("{Back}28", 10);
+            Delay.Milliseconds(70);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.RdbFemale' at Center.", repo.RxMainFrame.RxTabStandard.RdbFemaleInfo, new RecordItemIndex(9));
             repo.RxMainFrame.RxTabStandard.RdbFemale.Click();
@@ -131,8 +131,8 @@ namespace RxDemoDesktop.DB_Management
             Validate.AttributeEqual(repo.RxMainFrame.LblNumberOfPersonsNumberInfo, "Text", "1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.MariaBetaniaFemale28Marketing' at CenterLeft.", repo.RxMainFrame.RxTabStandard.MariaBetaniaFemale28MarketingInfo, new RecordItemIndex(13));
-            repo.RxMainFrame.RxTabStandard.MariaBetaniaFemale28Marketing.Click(Location.CenterLeft);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.db_Person' at CenterLeft.", repo.RxMainFrame.RxTabStandard.db_PersonInfo, new RecordItemIndex(13));
+            repo.RxMainFrame.RxTabStandard.db_Person.Click(Location.CenterLeft);
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.BtnDeletePerson' at Center.", repo.RxMainFrame.RxTabStandard.BtnDeletePersonInfo, new RecordItemIndex(14));

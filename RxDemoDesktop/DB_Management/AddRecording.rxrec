@@ -502,7 +502,7 @@ AUUUUAFFFFABRRRQAUUUUAFFFFAH/9k=
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="10ms"
 		searchpropertyid="0f236b69-de4a-4ab9-9f57-56b66229be46">
 			<comment>
 			</comment>
@@ -990,7 +990,7 @@ UUUAFFFFABRRRQAUUUUAf//Z
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="10ms"
 		searchpropertyid="90a81181-610a-4380-8f33-f85d1d3381d3">
 			<comment>
 			</comment>
@@ -2737,7 +2737,7 @@ BRRRQB//2Q==
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="10ms"
 		searchpropertyid="a787f92d-2d90-4fdf-bf6b-25ab8247a17c">
 			<comment>
 			</comment>

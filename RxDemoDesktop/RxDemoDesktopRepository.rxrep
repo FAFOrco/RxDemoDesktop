@@ -124,11 +124,10 @@ name="RxDemoDesktopRepository">
 				addcaps="listitem,accessible"
 				capname="listitem"
 				id="ba1a69ef-b1ba-4fb8-9b6c-02203335bf99"
-				name="MariaBetaniaFemale28Marketing"
+				name="db_Person"
 				refimgid="d8834e9a-4615-4ed2-b110-fc2474571ac4"
-				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/list/list/listitem[@accessiblename>'Maria Betania (female, 28)']"
 				searchtimeout="30000ms">
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/list[@controlname='lstPersonList']/?/?/listitem[@accessiblename&gt;'Maria Betania (female, 28)']
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/list[@controlname='lstPersonList']/?/?/listitem[@accessiblename&gt;'Karina Masoko (female, 28)']
 				</item>
 				<item
 				addcaps="button,control,nativewindow"

@@ -231,7 +231,7 @@ namespace RxDemoDesktop
             RepoItemInfo _lastnameInfo;
             RepoItemInfo _updowneditInfo;
             RepoItemInfo _rdbfemaleInfo;
-            RepoItemInfo _mariabetaniafemale28marketingInfo;
+            RepoItemInfo _db_personInfo;
             RepoItemInfo _btndeletepersonInfo;
 
             /// <summary>
@@ -246,7 +246,7 @@ namespace RxDemoDesktop
                 _lastnameInfo = new RepoItemInfo(this, "LastName", "?/?/text[@accessiblename='Last name']", 30000, null, "a3e6a773-d90a-4c52-838c-f710ca610088");
                 _updowneditInfo = new RepoItemInfo(this, "UpDownEdit", "?/?/text[@controlname='upDownEdit']", 30000, null, "28b9a8d8-941f-4d19-b11b-07e3d2f31c88");
                 _rdbfemaleInfo = new RepoItemInfo(this, "RdbFemale", "?/?/radiobutton[@controlname='rdbFemale']", 30000, null, "c4045824-46f6-46c9-9845-f07de256cb8f");
-                _mariabetaniafemale28marketingInfo = new RepoItemInfo(this, "MariaBetaniaFemale28Marketing", "list[@controlname='lstPersonList']/?/?/listitem[@accessiblename>'Maria Betania (female, 28)']", 30000, null, "ba1a69ef-b1ba-4fb8-9b6c-02203335bf99");
+                _db_personInfo = new RepoItemInfo(this, "db_Person", "list[@controlname='lstPersonList']/?/?/listitem[@accessiblename>'Karina Masoko (female, 28)']", 30000, null, "ba1a69ef-b1ba-4fb8-9b6c-02203335bf99");
                 _btndeletepersonInfo = new RepoItemInfo(this, "BtnDeletePerson", "button[@controlname='btnDeletePerson']", 30000, null, "6ea801b2-eca1-4685-9a5c-c9fb5c02bf49");
             }
 
@@ -419,26 +419,26 @@ namespace RxDemoDesktop
             }
 
             /// <summary>
-            /// The MariaBetaniaFemale28Marketing item.
+            /// The db_Person item.
             /// </summary>
             [RepositoryItem("ba1a69ef-b1ba-4fb8-9b6c-02203335bf99")]
-            public virtual Ranorex.ListItem MariaBetaniaFemale28Marketing
+            public virtual Ranorex.ListItem db_Person
             {
                 get
                 {
-                    return _mariabetaniafemale28marketingInfo.CreateAdapter<Ranorex.ListItem>(true);
+                    return _db_personInfo.CreateAdapter<Ranorex.ListItem>(true);
                 }
             }
 
             /// <summary>
-            /// The MariaBetaniaFemale28Marketing item info.
+            /// The db_Person item info.
             /// </summary>
             [RepositoryItemInfo("ba1a69ef-b1ba-4fb8-9b6c-02203335bf99")]
-            public virtual RepoItemInfo MariaBetaniaFemale28MarketingInfo
+            public virtual RepoItemInfo db_PersonInfo
             {
                 get
                 {
-                    return _mariabetaniafemale28marketingInfo;
+                    return _db_personInfo;
                 }
             }
 
