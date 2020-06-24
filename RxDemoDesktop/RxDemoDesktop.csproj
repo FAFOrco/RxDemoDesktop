@@ -137,20 +137,32 @@
       <UserCode>true</UserCode>
       <id>99410bfa-4b75-4556-a7c1-8d503dceb7b3</id>
     </Compile>
-    <Compile Include="Program.cs">
-      <id>45156e7e-199b-4df7-be1c-2d109af7a031</id>
+    <Compile Include="DB_Management\AddDeleteRecording.cs">
+      <BoundTo>e2f7ca61-eacd-42fb-b24b-58eb6bc90b2c</BoundTo>
+      <DependentUpon>AddDeleteRecording.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e4c32539-5fdf-423c-ab17-defa45063e98</id>
     </Compile>
-    <Compile Include="Recording1.cs">
-      <BoundTo>e52e5c7c-2a17-4ded-8f24-f0ad72e81695</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+    <Compile Include="DB_Management\AddDeleteRecording.UserCode.cs">
+      <BoundTo>e2f7ca61-eacd-42fb-b24b-58eb6bc90b2c</BoundTo>
+      <DependentUpon>AddDeleteRecording.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>55dde24a-bbb6-424b-944f-6f8dc69b20c4</id>
+    </Compile>
+    <Compile Include="DB_Management\AddRecording.cs">
+      <DependentUpon>AddRecording.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>6b55008a-cdb0-48cf-9e8c-5edd638dfb8d</id>
-    </Compile>
-    <Compile Include="Recording1.UserCode.cs">
       <BoundTo>e52e5c7c-2a17-4ded-8f24-f0ad72e81695</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Management\AddRecording.UserCode.cs">
+      <DependentUpon>AddRecording.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>b63ae33e-58b2-430b-b4f4-316616ca7280</id>
+      <BoundTo>e52e5c7c-2a17-4ded-8f24-f0ad72e81695</BoundTo>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>45156e7e-199b-4df7-be1c-2d109af7a031</id>
     </Compile>
     <Compile Include="RxDemoDesktopRepository.cs">
       <BoundTo>5cbe5aea-cf6a-4fc1-8f45-792c34068e05</BoundTo>
@@ -180,7 +192,12 @@
       <id>40e89fe0-4936-4458-8e51-bfee750e5d5d</id>
       <recordtableid>7acb8ccf-3277-4429-b04d-dbdb3492376d</recordtableid>
     </None>
-    <None Include="Recording1.rxrec">
+    <None Include="DB_Management\AddDeleteRecording.rxrec">
+      <BoundTo>5cbe5aea-cf6a-4fc1-8f45-792c34068e05</BoundTo>
+      <id>e2f7ca61-eacd-42fb-b24b-58eb6bc90b2c</id>
+      <recordtableid>409b3d44-595f-4108-9969-68c952110d34</recordtableid>
+    </None>
+    <None Include="DB_Management\AddRecording.rxrec">
       <BoundTo>5cbe5aea-cf6a-4fc1-8f45-792c34068e05</BoundTo>
       <id>e52e5c7c-2a17-4ded-8f24-f0ad72e81695</id>
       <recordtableid>3f159fe7-6652-4641-bc45-1c8cdde084e1</recordtableid>
@@ -211,6 +228,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>1780ef60-7986-415b-8dba-a19d8c786afb</id>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DB_Management">
+      <id>325a5547-d68a-41ab-94d7-6bb2f918b6af</id>
+    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

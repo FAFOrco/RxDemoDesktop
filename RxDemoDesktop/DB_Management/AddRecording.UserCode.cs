@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace RxDemoDesktop
+namespace RxDemoDesktop.DB_Management
 {
-    public partial class Recording1
+    public partial class AddRecording
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

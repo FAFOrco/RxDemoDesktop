@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace RxDemoDesktop
+namespace RxDemoDesktop.DB_Management
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The AddRecording recording.
     /// </summary>
     [TestModule("3f159fe7-6652-4641-bc45-1c8cdde084e1", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    public partial class AddRecording : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the RxDemoDesktopRepository repository.
+        /// Holds an instance of the global::RxDemoDesktop.RxDemoDesktopRepository repository.
         /// </summary>
-        public static RxDemoDesktopRepository repo = RxDemoDesktopRepository.Instance;
+        public static global::RxDemoDesktop.RxDemoDesktopRepository repo = global::RxDemoDesktop.RxDemoDesktopRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static AddRecording instance = new AddRecording();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public AddRecording()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static AddRecording Instance
         {
             get { return instance; }
         }

@@ -230,6 +230,9 @@ namespace RxDemoDesktop
             RepoItemInfo _firstnameInfo;
             RepoItemInfo _lastnameInfo;
             RepoItemInfo _updowneditInfo;
+            RepoItemInfo _rdbfemaleInfo;
+            RepoItemInfo _mariabetaniafemale28marketingInfo;
+            RepoItemInfo _btndeletepersonInfo;
 
             /// <summary>
             /// Creates a new RxTabStandard  folder.
@@ -242,6 +245,9 @@ namespace RxDemoDesktop
                 _firstnameInfo = new RepoItemInfo(this, "FirstName", "?/?/text[@accessiblename='First name']", 30000, null, "8587941a-7952-4729-b258-82a12aa38bd9");
                 _lastnameInfo = new RepoItemInfo(this, "LastName", "?/?/text[@accessiblename='Last name']", 30000, null, "a3e6a773-d90a-4c52-838c-f710ca610088");
                 _updowneditInfo = new RepoItemInfo(this, "UpDownEdit", "?/?/text[@controlname='upDownEdit']", 30000, null, "28b9a8d8-941f-4d19-b11b-07e3d2f31c88");
+                _rdbfemaleInfo = new RepoItemInfo(this, "RdbFemale", "?/?/radiobutton[@controlname='rdbFemale']", 30000, null, "c4045824-46f6-46c9-9845-f07de256cb8f");
+                _mariabetaniafemale28marketingInfo = new RepoItemInfo(this, "MariaBetaniaFemale28Marketing", "list[@controlname='lstPersonList']/?/?/listitem[@accessiblename>'Maria Betania (female, 28)']", 30000, null, "ba1a69ef-b1ba-4fb8-9b6c-02203335bf99");
+                _btndeletepersonInfo = new RepoItemInfo(this, "BtnDeletePerson", "button[@controlname='btnDeletePerson']", 30000, null, "6ea801b2-eca1-4685-9a5c-c9fb5c02bf49");
             }
 
             /// <summary>
@@ -387,6 +393,78 @@ namespace RxDemoDesktop
                     return _updowneditInfo;
                 }
             }
+
+            /// <summary>
+            /// The RdbFemale item.
+            /// </summary>
+            [RepositoryItem("c4045824-46f6-46c9-9845-f07de256cb8f")]
+            public virtual Ranorex.RadioButton RdbFemale
+            {
+                get
+                {
+                    return _rdbfemaleInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RdbFemale item info.
+            /// </summary>
+            [RepositoryItemInfo("c4045824-46f6-46c9-9845-f07de256cb8f")]
+            public virtual RepoItemInfo RdbFemaleInfo
+            {
+                get
+                {
+                    return _rdbfemaleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MariaBetaniaFemale28Marketing item.
+            /// </summary>
+            [RepositoryItem("ba1a69ef-b1ba-4fb8-9b6c-02203335bf99")]
+            public virtual Ranorex.ListItem MariaBetaniaFemale28Marketing
+            {
+                get
+                {
+                    return _mariabetaniafemale28marketingInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MariaBetaniaFemale28Marketing item info.
+            /// </summary>
+            [RepositoryItemInfo("ba1a69ef-b1ba-4fb8-9b6c-02203335bf99")]
+            public virtual RepoItemInfo MariaBetaniaFemale28MarketingInfo
+            {
+                get
+                {
+                    return _mariabetaniafemale28marketingInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BtnDeletePerson item.
+            /// </summary>
+            [RepositoryItem("6ea801b2-eca1-4685-9a5c-c9fb5c02bf49")]
+            public virtual Ranorex.Button BtnDeletePerson
+            {
+                get
+                {
+                    return _btndeletepersonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BtnDeletePerson item info.
+            /// </summary>
+            [RepositoryItemInfo("6ea801b2-eca1-4685-9a5c-c9fb5c02bf49")]
+            public virtual RepoItemInfo BtnDeletePersonInfo
+            {
+                get
+                {
+                    return _btndeletepersonInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -396,6 +474,7 @@ namespace RxDemoDesktop
         public partial class List1000AppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _salesInfo;
+            RepoItemInfo _marketingInfo;
 
             /// <summary>
             /// Creates a new List1000  folder.
@@ -404,6 +483,7 @@ namespace RxDemoDesktop
                     base("List1000", "/list[@controlid='1000']", parentFolder, 30000, null, true, "6c27dd37-0aef-4318-8460-09f7f702922b", "")
             {
                 _salesInfo = new RepoItemInfo(this, "Sales", "listitem[@text='Sales']", 30000, null, "70e74104-224d-46c7-aa29-024367375245");
+                _marketingInfo = new RepoItemInfo(this, "Marketing", "listitem[@text='Marketing']", 30000, null, "c048c07e-5a05-4d8f-b676-26589ad219c8");
             }
 
             /// <summary>
@@ -451,6 +531,30 @@ namespace RxDemoDesktop
                 get
                 {
                     return _salesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Marketing item.
+            /// </summary>
+            [RepositoryItem("c048c07e-5a05-4d8f-b676-26589ad219c8")]
+            public virtual Ranorex.ListItem Marketing
+            {
+                get
+                {
+                    return _marketingInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Marketing item info.
+            /// </summary>
+            [RepositoryItemInfo("c048c07e-5a05-4d8f-b676-26589ad219c8")]
+            public virtual RepoItemInfo MarketingInfo
+            {
+                get
+                {
+                    return _marketingInfo;
                 }
             }
         }

@@ -110,6 +110,36 @@ name="RxDemoDesktopRepository">
 				searchtimeout="30000ms">
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/?/?/text[@controlname='upDownEdit']
 				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="c4045824-46f6-46c9-9845-f07de256cb8f"
+				name="RdbFemale"
+				refimgid="5c147c28-abb4-4077-bdc3-8380f90c14dc"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/container[@controlname='grpGender']/radiobutton[@controlname='rdbFemale']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/?/?/radiobutton[@controlname='rdbFemale']
+				</item>
+				<item
+				addcaps="listitem,accessible"
+				capname="listitem"
+				id="ba1a69ef-b1ba-4fb8-9b6c-02203335bf99"
+				name="MariaBetaniaFemale28Marketing"
+				refimgid="d8834e9a-4615-4ed2-b110-fc2474571ac4"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/list/list/listitem[@accessiblename>'Maria Betania (female, 28)']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/list[@controlname='lstPersonList']/?/?/listitem[@accessiblename&gt;'Maria Betania (female, 28)']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="6ea801b2-eca1-4685-9a5c-c9fb5c02bf49"
+				name="BtnDeletePerson"
+				refimgid="1bc314c6-783d-471e-b482-f84167f4a855"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/button[@controlname='btnDeletePerson']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/button[@controlname='btnDeletePerson']
+				</item>
 				<basepath>
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']
 				</basepath>
@@ -143,6 +173,16 @@ rkJggg==
 			refpath="/list[@controlid='1000']/listitem[@text='Sales']"
 			searchtimeout="30000ms">
 				/list[@controlid='1000']/listitem[@text='Sales']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="c048c07e-5a05-4d8f-b676-26589ad219c8"
+			name="Marketing"
+			refimgid="21549eca-75ce-4025-a073-c206b0901fa6"
+			refpath="/list[@controlid='1000']/listitem[@text='Marketing']"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text='Marketing']
 			</item>
 			<basepath>
 				/list[@controlid='1000']
