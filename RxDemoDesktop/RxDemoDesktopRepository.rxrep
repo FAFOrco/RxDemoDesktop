@@ -27,9 +27,8 @@ name="RxDemoDesktopRepository">
 			id="b42cf2d9-c4b9-464e-ad4b-005e22c2557b"
 			name="TestDatabase"
 			refimgid="41bc089f-14c6-4936-9108-0b8edac684d5"
-			refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@accessiblename='Test database']"
 			searchtimeout="30000ms">
-				/form[@controlname='RxMainFrame']/?/?/tabpage[@accessiblename='Test database']
+				/form[@controlname='RxMainFrame']/?/?/tabpage[@accessiblename='Test database' and @visible='true']
 			</item>
 			<item
 			addcaps="button,control,nativewindow"

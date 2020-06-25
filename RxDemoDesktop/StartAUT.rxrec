@@ -32,7 +32,8 @@ mode="Desktop">
 		<runapprecorditem
 		enabled="True"
 		maximized="False"
-		optional="False">
+		optional="False"
+		runflags="NoElevation">
 			<comment>
 			</comment>
 			<bindings>

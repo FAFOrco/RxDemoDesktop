@@ -108,7 +108,7 @@ namespace RxDemoDesktop
                     base("RxMainFrame", "/form[@controlname='RxMainFrame']", parentFolder, 30000, null, true, "deab196d-2298-450b-89bd-7e8e12fc3f06", "")
             {
                 _rxtabstandard = new RxDemoDesktopRepositoryFolders.RxTabStandardFolder(this);
-                _testdatabaseInfo = new RepoItemInfo(this, "TestDatabase", "?/?/tabpage[@accessiblename='Test database']", 30000, null, "b42cf2d9-c4b9-464e-ad4b-005e22c2557b");
+                _testdatabaseInfo = new RepoItemInfo(this, "TestDatabase", "?/?/tabpage[@accessiblename='Test database' and @visible='true']", 30000, null, "b42cf2d9-c4b9-464e-ad4b-005e22c2557b");
                 _btnaddpersonInfo = new RepoItemInfo(this, "BtnAddPerson", "?/?/tabpage[@controlname='RxTabStandard']/button[@controlname='btnAddPerson']", 30000, null, "075b51f5-1998-40bd-8aa1-b19a80696f4d");
                 _lblnumberofpersonsnumberInfo = new RepoItemInfo(this, "LblNumberOfPersonsNumber", "?/?/tabpage[@controlname='RxTabStandard']/text[@controlname='lblNumberOfPersonsNumber']", 30000, null, "a96f4104-2bc8-433e-8929-0f601374973e");
             }

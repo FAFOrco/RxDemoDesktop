@@ -93,7 +93,7 @@ namespace RxDemoDesktop
             Init();
 
             Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Users\\No Name\\Desktop\\RxDemoApp.exe' in normal mode. Return value bound to $StartAutProcessIDVar.", new RecordItemIndex(0));
-            StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("C:\\Users\\No Name\\Desktop\\RxDemoApp.exe", "", "", false));
+            StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("C:\\Users\\No Name\\Desktop\\RxDemoApp.exe", "", "", false, RunAppFlags.NoElevation));
             Delay.Milliseconds(0);
             
         }
