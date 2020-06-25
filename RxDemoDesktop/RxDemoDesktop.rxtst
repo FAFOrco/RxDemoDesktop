@@ -13,18 +13,36 @@
 					</param>
 				</parameters>
 			</testcase>
+			<setup
+			id="4523e735-68a0-49af-af0b-3af601c8fc95"
+			name="setup">
+			</setup>
 			<testcase
 			datasource="TC01_Connector"
 			id="4977cf33-daf2-4507-a422-a96e019ee3a8"
 			name="TC01">
 				<description>
-					<![CDATA[DB Management - Add Entry]]>
+					<![CDATA[DB Management - Add Entry -&nbsp;One&nbsp;per Execution]]>
 				</description>
 			</testcase>
 			<teardown
 			id="4de6645c-86ad-4979-8d07-e1d3bfda0a8b"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="502fae97-fbb8-44eb-ac8c-7c79331b3f9a"
+			name="CloseAUT"
+			ref="7acb8ccf-3277-4429-b04d-dbdb3492376d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="34fe48e0-ceec-42a4-9632-1a2f384c3bac"
+					variableid="07bf245d-565e-41db-a797-9f92ce673b20"
+					variablename="CloseAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="507b8087-a845-4a2d-a493-d0fe9279bf3c"
 			name="StartAUT"
@@ -40,12 +58,23 @@
 				</databinding>
 			</testmodule>
 			<testcase
-			id="6d5a3590-e132-4ce7-89ce-cb41ee7e5f6b"
+			id="57991aad-de1f-49ae-ad19-6309270495a6"
 			name="TC02">
+				<description>
+					<![CDATA[<p>DB Manager - Add Entry - Massive</p>]]>
+				</description>
+			</testcase>
+			<testcase
+			id="6d5a3590-e132-4ce7-89ce-cb41ee7e5f6b"
+			name="TC03">
 				<description>
 					<![CDATA[<p>DB Management - Add and Delete&nbsp;Entry</p>]]>
 				</description>
 			</testcase>
+			<teardown
+			id="82b10cbe-23a0-4cbe-a9d3-639ad7ab9f66"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="9ba07160-53a1-4188-afc6-d9e715b87125"
 			name="AddRecording"
@@ -99,6 +128,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="a3132dd0-685f-4f84-8aad-1f0c8e177a74"
+			name="StartAUT"
+			ref="183fe4d8-b6f0-4106-93ef-4355d8636d64"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="34fe48e0-ceec-42a4-9632-1a2f384c3bac"
+					variableid="dacf3ab9-150b-40b4-99d7-3cfb44183281"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="ac6772e3-85e2-4a63-b806-a3b2f1711454"
 			name="CloseAUT"
 			ref="7acb8ccf-3277-4429-b04d-dbdb3492376d"
@@ -135,6 +178,49 @@
 			reporttemplatefolder=""
 			reportwriteinterval="30000ms">
 			</testsuite>
+			<smartfoldernode
+			datasource="TC01_Connector"
+			id="bf5f99ce-c6e2-431d-b863-ceff0264505e"
+			name="Loop_TC02">
+			</smartfoldernode>
+			<testmodule
+			id="ca4663b3-a1ea-4f17-92db-ecc648b13bb8"
+			name="AddRecording"
+			ref="3f159fe7-6652-4641-bc45-1c8cdde084e1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NOMBRE"
+					datasourceid="33da07d7-9d0a-4704-80ce-f72a0a5a80b9"
+					variableid="e091d946-b8ce-4260-b0a2-8868606240b9"
+					variablename="NOMBRE">
+					</var>
+					<var
+					dataname="APELLIDO"
+					datasourceid="33da07d7-9d0a-4704-80ce-f72a0a5a80b9"
+					variableid="3bc5e44b-2b86-4fd2-97cd-48b549c49264"
+					variablename="APELLIDO">
+					</var>
+					<var
+					dataname="AREA"
+					datasourceid="33da07d7-9d0a-4704-80ce-f72a0a5a80b9"
+					variableid="d9ab43d0-4bef-44fc-8d2b-0f497eb3f347"
+					variablename="AREA">
+					</var>
+					<var
+					dataname="EDAD"
+					datasourceid="33da07d7-9d0a-4704-80ce-f72a0a5a80b9"
+					variableid="c16cfc67-313b-468b-a7bf-f061afa987b2"
+					variablename="EDAD">
+					</var>
+					<var
+					dataname="GENERO"
+					datasourceid="33da07d7-9d0a-4704-80ce-f72a0a5a80b9"
+					variableid="bdd4ae4c-fcda-4412-9e97-e917b8ac23d6"
+					variablename="GENERO">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="cb3ee0ab-fa7b-4ccb-b029-f046b87f4e50"
 			name="AddDeleteRecording"
@@ -196,8 +282,36 @@
 						</teardown>
 					</testcase>
 					<testcase
-					id="6d5a3590-e132-4ce7-89ce-cb41ee7e5f6b"
+					id="57991aad-de1f-49ae-ad19-6309270495a6"
 					name="TC02">
+						<setup
+						id="4523e735-68a0-49af-af0b-3af601c8fc95"
+						name="setup">
+							<testmodule
+							id="a3132dd0-685f-4f84-8aad-1f0c8e177a74"
+							name="StartAUT">
+							</testmodule>
+						</setup>
+						<smartfoldernode
+						id="bf5f99ce-c6e2-431d-b863-ceff0264505e"
+						name="Loop_TC02">
+							<testmodule
+							id="ca4663b3-a1ea-4f17-92db-ecc648b13bb8"
+							name="AddRecording">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="82b10cbe-23a0-4cbe-a9d3-639ad7ab9f66"
+						name="teardown">
+							<testmodule
+							id="502fae97-fbb8-44eb-ac8c-7c79331b3f9a"
+							name="CloseAUT">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="6d5a3590-e132-4ce7-89ce-cb41ee7e5f6b"
+					name="TC03">
 						<setup
 						id="ade2fd03-64d3-4394-b765-51ad922be0e5"
 						name="setup">
@@ -258,7 +372,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="Full_Run">
+	default="AddEntryMassive">
 		<testconfiguration
 		name="AddDeleteEntry">
 			<testcontainer
@@ -278,6 +392,18 @@
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
+		name="AddEntryMassive">
+			<testcontainer
+			id="34fe48e0-ceec-42a4-9632-1a2f384c3bac">
+			</testcontainer>
+			<testcontainer
+			id="57991aad-de1f-49ae-ad19-6309270495a6">
+			</testcontainer>
+			<testcontainer
+			id="bf5f99ce-c6e2-431d-b863-ceff0264505e">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
 		name="Full_Run">
 			<testcontainer
 			id="34fe48e0-ceec-42a4-9632-1a2f384c3bac">
@@ -286,7 +412,13 @@
 			id="4977cf33-daf2-4507-a422-a96e019ee3a8">
 			</testcontainer>
 			<testcontainer
+			id="57991aad-de1f-49ae-ad19-6309270495a6">
+			</testcontainer>
+			<testcontainer
 			id="6d5a3590-e132-4ce7-89ce-cb41ee7e5f6b">
+			</testcontainer>
+			<testcontainer
+			id="bf5f99ce-c6e2-431d-b863-ceff0264505e">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
