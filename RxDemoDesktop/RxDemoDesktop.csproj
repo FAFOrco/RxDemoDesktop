@@ -218,6 +218,13 @@
       <id>b3191ba9-24af-4c3f-b639-54b6c8b1686a</id>
       <recordtableid>183fe4d8-b6f0-4106-93ef-4355d8636d64</recordtableid>
     </None>
+    <Content Include="TC01_DS.xlsx">
+      <Link>TC01_DS.xlsx</Link>
+      <BoundTo>1780ef60-7986-415b-8dba-a19d8c786afb</BoundTo>
+      <DependentUpon>RxDemoDesktop.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>89bb932b-59f6-43b3-92a8-47efb7d82c2f</id>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="RxDemoDesktop.rxtmg">

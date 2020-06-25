@@ -339,9 +339,10 @@
 	</testsuiteentryhierarchy>
 	<datasources>
 		<DataSource
-		filename="C:\Users\No Name\Documents\Ranorex\RanorexStudio Projects\RxDemoDesktop\DataSources\TC01_DS.xlsx"
+		filename="TC01_DS.xlsx"
 		id="33da07d7-9d0a-4704-80ce-f72a0a5a80b9"
-		includefile="Unchecked"
+		includefile="Checked"
+		labelcolumn="NOMBRE"
 		lastknownrowcount="4"
 		name="TC01_Connector"
 		type="Ranorex.Core.Data.ExcelDataConnector"
