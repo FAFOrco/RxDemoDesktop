@@ -73,11 +73,10 @@ name="RxDemoDesktopRepository">
 				addcaps="radiobutton,control,nativewindow"
 				capname="radiobutton"
 				id="0cd049bb-2e5f-4790-b022-8ba0906ad272"
-				name="RdbMale"
+				name="RdbGenero"
 				refimgid="02d90d5a-36a1-437a-a0f4-d1d9e641fb2c"
-				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/container[@controlname='grpGender']/radiobutton[@controlname='rdbMale']"
 				searchtimeout="30000ms">
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/?/?/radiobutton[@controlname='rdbMale']
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/container[@controlname='grpGender']/radiobutton[@text=$GENERO]
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -168,9 +167,8 @@ rkJggg==
 			id="70e74104-224d-46c7-aa29-024367375245"
 			name="Sales"
 			refimgid="cd9633ce-3476-4908-9ee2-c71a5d3e7d2c"
-			refpath="/list[@controlid='1000']/listitem[@text='Sales']"
 			searchtimeout="30000ms">
-				/list[@controlid='1000']/listitem[@text='Sales']
+				/list[@controlid='1000']/listitem[@text=$AREA]
 			</item>
 			<item
 			addcaps="listitem,nativeitem,checkable"
@@ -244,5 +242,15 @@ OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="d9ab43d0-4bef-44fc-8d2b-0f497eb3f347"
+		name="AREA">
+			Sales
+		</var>
+		<var
+		id="bdd4ae4c-fcda-4412-9e97-e917b8ac23d6"
+		name="GENERO">
+			Male
+		</var>
 	</variables>
 </repository>

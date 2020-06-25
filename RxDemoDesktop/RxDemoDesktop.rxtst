@@ -14,6 +14,7 @@
 				</parameters>
 			</testcase>
 			<testcase
+			datasource="TC01_Connector"
 			id="4977cf33-daf2-4507-a422-a96e019ee3a8"
 			name="TC01">
 				<description>
@@ -50,6 +51,38 @@
 			name="AddRecording"
 			ref="3f159fe7-6652-4641-bc45-1c8cdde084e1"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="NOMBRE"
+					datasourceid="33da07d7-9d0a-4704-80ce-f72a0a5a80b9"
+					variableid="e091d946-b8ce-4260-b0a2-8868606240b9"
+					variablename="NOMBRE">
+					</var>
+					<var
+					dataname="APELLIDO"
+					datasourceid="33da07d7-9d0a-4704-80ce-f72a0a5a80b9"
+					variableid="3bc5e44b-2b86-4fd2-97cd-48b549c49264"
+					variablename="APELLIDO">
+					</var>
+					<var
+					dataname="AREA"
+					datasourceid="33da07d7-9d0a-4704-80ce-f72a0a5a80b9"
+					variableid="d9ab43d0-4bef-44fc-8d2b-0f497eb3f347"
+					variablename="AREA">
+					</var>
+					<var
+					dataname="EDAD"
+					datasourceid="33da07d7-9d0a-4704-80ce-f72a0a5a80b9"
+					variableid="c16cfc67-313b-468b-a7bf-f061afa987b2"
+					variablename="EDAD">
+					</var>
+					<var
+					dataname="GENERO"
+					datasourceid="33da07d7-9d0a-4704-80ce-f72a0a5a80b9"
+					variableid="bdd4ae4c-fcda-4412-9e97-e917b8ac23d6"
+					variablename="GENERO">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="a312df56-b9bd-47e2-91ab-e8db25a3509c"
@@ -191,6 +224,38 @@
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		filename="C:\Users\No Name\Documents\Ranorex\RanorexStudio Projects\RxDemoDesktop\DataSources\TC01_DS.xlsx"
+		id="33da07d7-9d0a-4704-80ce-f72a0a5a80b9"
+		includefile="Unchecked"
+		lastknownrowcount="4"
+		name="TC01_Connector"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Hoja1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					NOMBRE
+				</column>
+				<column>
+					APELLIDO
+				</column>
+				<column>
+					AREA
+				</column>
+				<column>
+					EDAD
+				</column>
+				<column>
+					GENERO
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+				<columnname>
+					EDAD
+				</columnname>
+			</maskedcolumns>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="Full_Run">

@@ -51,6 +51,30 @@ namespace RxDemoDesktop
 
 #region Variables
 
+        string _AREA = "Sales";
+
+        /// <summary>
+        /// Gets or sets the value of variable AREA.
+        /// </summary>
+        [TestVariable("d9ab43d0-4bef-44fc-8d2b-0f497eb3f347")]
+        public string AREA
+        {
+            get { return _AREA; }
+            set { _AREA = value; }
+        }
+
+        string _GENERO = "Male";
+
+        /// <summary>
+        /// Gets or sets the value of variable GENERO.
+        /// </summary>
+        [TestVariable("bdd4ae4c-fcda-4412-9e97-e917b8ac23d6")]
+        public string GENERO
+        {
+            get { return _GENERO; }
+            set { _GENERO = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -226,7 +250,7 @@ namespace RxDemoDesktop
         public partial class RxTabStandardFolder : RepoGenBaseFolder
         {
             RepoItemInfo _abrirInfo;
-            RepoItemInfo _rdbmaleInfo;
+            RepoItemInfo _rdbgeneroInfo;
             RepoItemInfo _firstnameInfo;
             RepoItemInfo _lastnameInfo;
             RepoItemInfo _updowneditInfo;
@@ -241,7 +265,7 @@ namespace RxDemoDesktop
                     base("RxTabStandard", "?/?/tabpage[@controlname='RxTabStandard']", parentFolder, 30000, null, false, "2208919f-c341-4899-a250-684dc0d443f8", "")
             {
                 _abrirInfo = new RepoItemInfo(this, "Abrir", "?/?/button[@accessiblename='Abrir']", 30000, null, "84cbfce1-2e09-4595-8561-d940b9828eb4");
-                _rdbmaleInfo = new RepoItemInfo(this, "RdbMale", "?/?/radiobutton[@controlname='rdbMale']", 30000, null, "0cd049bb-2e5f-4790-b022-8ba0906ad272");
+                _rdbgeneroInfo = new RepoItemInfo(this, "RdbGenero", "container[@controlname='grpGender']/radiobutton[@text=$GENERO]", 30000, null, "0cd049bb-2e5f-4790-b022-8ba0906ad272");
                 _firstnameInfo = new RepoItemInfo(this, "FirstName", "?/?/text[@accessiblename='First name']", 30000, null, "8587941a-7952-4729-b258-82a12aa38bd9");
                 _lastnameInfo = new RepoItemInfo(this, "LastName", "?/?/text[@accessiblename='Last name']", 30000, null, "a3e6a773-d90a-4c52-838c-f710ca610088");
                 _updowneditInfo = new RepoItemInfo(this, "UpDownEdit", "?/?/text[@controlname='upDownEdit']", 30000, null, "28b9a8d8-941f-4d19-b11b-07e3d2f31c88");
@@ -299,26 +323,26 @@ namespace RxDemoDesktop
             }
 
             /// <summary>
-            /// The RdbMale item.
+            /// The RdbGenero item.
             /// </summary>
             [RepositoryItem("0cd049bb-2e5f-4790-b022-8ba0906ad272")]
-            public virtual Ranorex.RadioButton RdbMale
+            public virtual Ranorex.RadioButton RdbGenero
             {
                 get
                 {
-                    return _rdbmaleInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                    return _rdbgeneroInfo.CreateAdapter<Ranorex.RadioButton>(true);
                 }
             }
 
             /// <summary>
-            /// The RdbMale item info.
+            /// The RdbGenero item info.
             /// </summary>
             [RepositoryItemInfo("0cd049bb-2e5f-4790-b022-8ba0906ad272")]
-            public virtual RepoItemInfo RdbMaleInfo
+            public virtual RepoItemInfo RdbGeneroInfo
             {
                 get
                 {
-                    return _rdbmaleInfo;
+                    return _rdbgeneroInfo;
                 }
             }
 
@@ -482,7 +506,7 @@ namespace RxDemoDesktop
             public List1000AppFolder(RepoGenBaseFolder parentFolder) :
                     base("List1000", "/list[@controlid='1000']", parentFolder, 30000, null, true, "6c27dd37-0aef-4318-8460-09f7f702922b", "")
             {
-                _salesInfo = new RepoItemInfo(this, "Sales", "listitem[@text='Sales']", 30000, null, "70e74104-224d-46c7-aa29-024367375245");
+                _salesInfo = new RepoItemInfo(this, "Sales", "listitem[@text=$AREA]", 30000, null, "70e74104-224d-46c7-aa29-024367375245");
                 _marketingInfo = new RepoItemInfo(this, "Marketing", "listitem[@text='Marketing']", 30000, null, "c048c07e-5a05-4d8f-b676-26589ad219c8");
             }
 

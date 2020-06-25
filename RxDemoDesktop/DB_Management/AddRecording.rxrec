@@ -23,6 +23,21 @@ mode="Desktop">
 	namespace="RxDemoDesktop.DB_Management">
 	</codegen>
 	<variables>
+		<var
+		id="e091d946-b8ce-4260-b0a2-8868606240b9"
+		name="NOMBRE">
+			John
+		</var>
+		<var
+		id="3bc5e44b-2b86-4fd2-97cd-48b549c49264"
+		name="APELLIDO">
+			Walker
+		</var>
+		<var
+		id="c16cfc67-313b-468b-a7bf-f061afa987b2"
+		name="EDAD">
+			48
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -507,6 +522,10 @@ AUUUUAFFFFABRRRQAUUUUAFFFFAH/9k=
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="NOMBRE">
+				</binding>
 			</bindings>
 			<info
 			id="8587941a-7952-4729-b258-82a12aa38bd9"
@@ -995,6 +1014,10 @@ UUUAFFFFABRRRQAUUUUAf//Z
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="APELLIDO">
+				</binding>
 			</bindings>
 			<info
 			id="a3e6a773-d90a-4c52-838c-f710ca610088"
@@ -2732,6 +2755,25 @@ f/QTUlE9FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
 BRRRQB//2Q==
 			</helperscreenshot>
 		</mouseitem>
+		<setvaluerecorditem
+		attrname="Text"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0e1534ea-edfe-4bec-a9a5-8852c33cbc6a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="28b9a8d8-941f-4d19-b11b-07e3d2f31c88"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/?/?/text[@controlname='upDownEdit']
+				</path>
+			</info>
+			<AttributeValue>
+			</AttributeValue>
+		</setvaluerecorditem>
 		<keysequenceitem
 		KeySequence="{Back}{NumPad4 down}{NumPad8 down}{NumPad4 up}{NumPad8 up}"
 		duration="100ms"
@@ -2742,6 +2784,10 @@ BRRRQB//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="EDAD">
+				</binding>
 			</bindings>
 			<info
 			id="28b9a8d8-941f-4d19-b11b-07e3d2f31c88"
@@ -5452,7 +5498,7 @@ Zf76f98H/GlooATMv99P++D/AI0Zl/vp/wB8H/GlooATMv8AfT/vg/40Zl/vp/3wf8aWigD/2Q==
 			</helperscreenshot>
 		</mouseitem>
 		<validationitem
-		action="AttributeEqual"
+		action="AttributeRegex"
 		duration="100ms"
 		enabled="True"
 		optional="False"
@@ -6332,7 +6378,7 @@ ALKaKKACqJ/5Bx/64f8AstFFNCJIv9WKKKKQz//Z
 				Text
 			</matchname>
 			<matchvalue>
-				1
+				[1-9]+
 			</matchvalue>
 		</validationitem>
 	</recorditems>

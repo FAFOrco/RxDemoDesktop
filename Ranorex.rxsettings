@@ -389,6 +389,10 @@ rxversion="9.2">
 	</plugins.win32.enablebitbridge>
 	<plugins.rawtext.whitelist>
 		<rawtextconfig>
+			<include
+			name="^WindowsForms10\.SysMonthCal32\.app\.0\.141b42a_r12_ad1$"
+			type="class">
+			</include>
 		</rawtextconfig>
 	</plugins.rawtext.whitelist>
 	<Telemetry.Enabled>

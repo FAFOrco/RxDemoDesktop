@@ -41,6 +41,9 @@ namespace RxDemoDesktop.DB_Management
         /// </summary>
         public AddRecording()
         {
+            NOMBRE = "John";
+            APELLIDO = "Walker";
+            EDAD = "48";
         }
 
         /// <summary>
@@ -52,6 +55,62 @@ namespace RxDemoDesktop.DB_Management
         }
 
 #region Variables
+
+        string _NOMBRE;
+
+        /// <summary>
+        /// Gets or sets the value of variable NOMBRE.
+        /// </summary>
+        [TestVariable("e091d946-b8ce-4260-b0a2-8868606240b9")]
+        public string NOMBRE
+        {
+            get { return _NOMBRE; }
+            set { _NOMBRE = value; }
+        }
+
+        string _APELLIDO;
+
+        /// <summary>
+        /// Gets or sets the value of variable APELLIDO.
+        /// </summary>
+        [TestVariable("3bc5e44b-2b86-4fd2-97cd-48b549c49264")]
+        public string APELLIDO
+        {
+            get { return _APELLIDO; }
+            set { _APELLIDO = value; }
+        }
+
+        string _EDAD;
+
+        /// <summary>
+        /// Gets or sets the value of variable EDAD.
+        /// </summary>
+        [TestVariable("c16cfc67-313b-468b-a7bf-f061afa987b2")]
+        public string EDAD
+        {
+            get { return _EDAD; }
+            set { _EDAD = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable AREA.
+        /// </summary>
+        [TestVariable("d9ab43d0-4bef-44fc-8d2b-0f497eb3f347")]
+        public string AREA
+        {
+            get { return repo.AREA; }
+            set { repo.AREA = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable GENERO.
+        /// </summary>
+        [TestVariable("bdd4ae4c-fcda-4412-9e97-e917b8ac23d6")]
+        public string GENERO
+        {
+            get { return repo.GENERO; }
+            set { repo.GENERO = value; }
+        }
 
 #endregion
 
@@ -87,16 +146,16 @@ namespace RxDemoDesktop.DB_Management
             repo.RxMainFrame.RxTabStandard.FirstName.Click("64;7");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'John' with focus on 'RxMainFrame.RxTabStandard.FirstName'.", repo.RxMainFrame.RxTabStandard.FirstNameInfo, new RecordItemIndex(2));
-            repo.RxMainFrame.RxTabStandard.FirstName.PressKeys("John", 10);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NOMBRE' with focus on 'RxMainFrame.RxTabStandard.FirstName'.", repo.RxMainFrame.RxTabStandard.FirstNameInfo, new RecordItemIndex(2));
+            repo.RxMainFrame.RxTabStandard.FirstName.PressKeys(NOMBRE, 10);
             Delay.Milliseconds(60);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.LastName' at 32;6.", repo.RxMainFrame.RxTabStandard.LastNameInfo, new RecordItemIndex(3));
             repo.RxMainFrame.RxTabStandard.LastName.Click("32;6");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Walker' with focus on 'RxMainFrame.RxTabStandard.LastName'.", repo.RxMainFrame.RxTabStandard.LastNameInfo, new RecordItemIndex(4));
-            repo.RxMainFrame.RxTabStandard.LastName.PressKeys("Walker", 10);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$APELLIDO' with focus on 'RxMainFrame.RxTabStandard.LastName'.", repo.RxMainFrame.RxTabStandard.LastNameInfo, new RecordItemIndex(4));
+            repo.RxMainFrame.RxTabStandard.LastName.PressKeys(APELLIDO, 10);
             Delay.Milliseconds(40);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.Abrir' at 3;8.", repo.RxMainFrame.RxTabStandard.AbrirInfo, new RecordItemIndex(5));
@@ -111,20 +170,24 @@ namespace RxDemoDesktop.DB_Management
             repo.RxMainFrame.RxTabStandard.UpDownEdit.Click("40;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}{NumPad4 down}{NumPad8 down}{NumPad4 up}{NumPad8 up}' with focus on 'RxMainFrame.RxTabStandard.UpDownEdit'.", repo.RxMainFrame.RxTabStandard.UpDownEditInfo, new RecordItemIndex(8));
-            repo.RxMainFrame.RxTabStandard.UpDownEdit.PressKeys("{Back}{NumPad4 down}{NumPad8 down}{NumPad4 up}{NumPad8 up}", 10);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '' on item 'RxMainFrame.RxTabStandard.UpDownEdit'.", repo.RxMainFrame.RxTabStandard.UpDownEditInfo, new RecordItemIndex(8));
+            repo.RxMainFrame.RxTabStandard.UpDownEdit.Element.SetAttributeValue("Text", "");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$EDAD' with focus on 'RxMainFrame.RxTabStandard.UpDownEdit'.", repo.RxMainFrame.RxTabStandard.UpDownEditInfo, new RecordItemIndex(9));
+            repo.RxMainFrame.RxTabStandard.UpDownEdit.PressKeys(EDAD, 10);
             Delay.Milliseconds(50);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.RdbMale' at 8;7.", repo.RxMainFrame.RxTabStandard.RdbMaleInfo, new RecordItemIndex(9));
-            repo.RxMainFrame.RxTabStandard.RdbMale.Click("8;7");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.RdbGenero' at 8;7.", repo.RxMainFrame.RxTabStandard.RdbGeneroInfo, new RecordItemIndex(10));
+            repo.RxMainFrame.RxTabStandard.RdbGenero.Click("8;7");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.BtnAddPerson' at 53;10.", repo.RxMainFrame.BtnAddPersonInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.BtnAddPerson' at 53;10.", repo.RxMainFrame.BtnAddPersonInfo, new RecordItemIndex(11));
             repo.RxMainFrame.BtnAddPerson.Click("53;10");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='1') on item 'RxMainFrame.LblNumberOfPersonsNumber'.", repo.RxMainFrame.LblNumberOfPersonsNumberInfo, new RecordItemIndex(11));
-            Validate.AttributeEqual(repo.RxMainFrame.LblNumberOfPersonsNumberInfo, "Text", "1");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeRegex (Text~'[1-9]+') on item 'RxMainFrame.LblNumberOfPersonsNumber'.", repo.RxMainFrame.LblNumberOfPersonsNumberInfo, new RecordItemIndex(12));
+            Validate.AttributeRegex(repo.RxMainFrame.LblNumberOfPersonsNumberInfo, "Text", new Regex("[1-9]+"));
             Delay.Milliseconds(100);
             
         }
