@@ -182,6 +182,9 @@
 			datasource="TC01_Connector"
 			id="bf5f99ce-c6e2-431d-b863-ceff0264505e"
 			name="Loop_TC02">
+				<description>
+					<![CDATA[Carpeta para realizar el loop de ingreso de datos sin salir de la aplicacion]]>
+				</description>
 			</smartfoldernode>
 			<testmodule
 			id="ca4663b3-a1ea-4f17-92db-ecc648b13bb8"
