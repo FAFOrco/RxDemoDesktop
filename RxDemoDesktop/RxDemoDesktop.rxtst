@@ -376,7 +376,7 @@
 		</DataSource>
 	</datasources>
 	<testconfigurations
-	default="AddEntryMassive">
+	default="Full_Run">
 		<testconfiguration
 		name="AddDeleteEntry">
 			<testcontainer

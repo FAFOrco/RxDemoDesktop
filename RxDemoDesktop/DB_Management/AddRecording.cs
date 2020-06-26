@@ -56,30 +56,6 @@ namespace RxDemoDesktop.DB_Management
 
 #region Variables
 
-        string _NOMBRE;
-
-        /// <summary>
-        /// Gets or sets the value of variable NOMBRE.
-        /// </summary>
-        [TestVariable("e091d946-b8ce-4260-b0a2-8868606240b9")]
-        public string NOMBRE
-        {
-            get { return _NOMBRE; }
-            set { _NOMBRE = value; }
-        }
-
-        string _APELLIDO;
-
-        /// <summary>
-        /// Gets or sets the value of variable APELLIDO.
-        /// </summary>
-        [TestVariable("3bc5e44b-2b86-4fd2-97cd-48b549c49264")]
-        public string APELLIDO
-        {
-            get { return _APELLIDO; }
-            set { _APELLIDO = value; }
-        }
-
         string _EDAD;
 
         /// <summary>
@@ -110,6 +86,26 @@ namespace RxDemoDesktop.DB_Management
         {
             get { return repo.GENERO; }
             set { repo.GENERO = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable NOMBRE.
+        /// </summary>
+        [TestVariable("e091d946-b8ce-4260-b0a2-8868606240b9")]
+        public string NOMBRE
+        {
+            get { return repo.NOMBRE; }
+            set { repo.NOMBRE = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable APELLIDO.
+        /// </summary>
+        [TestVariable("3bc5e44b-2b86-4fd2-97cd-48b549c49264")]
+        public string APELLIDO
+        {
+            get { return repo.APELLIDO; }
+            set { repo.APELLIDO = value; }
         }
 
 #endregion

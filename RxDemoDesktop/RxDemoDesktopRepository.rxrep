@@ -125,7 +125,7 @@ name="RxDemoDesktopRepository">
 				name="db_Person"
 				refimgid="d8834e9a-4615-4ed2-b110-fc2474571ac4"
 				searchtimeout="30000ms">
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/list[@controlname='lstPersonList']/?/?/listitem[@accessiblename&gt;'Karina Masoko (female, 28)']
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/list[@controlname='lstPersonList']/?/?/listitem[@accessiblename~$NOMBRE+' '+$APELLIDO]
 				</item>
 				<item
 				addcaps="button,control,nativewindow"
@@ -251,6 +251,14 @@ OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 		id="bdd4ae4c-fcda-4412-9e97-e917b8ac23d6"
 		name="GENERO">
 			Male
+		</var>
+		<var
+		id="6fee93b2-180c-4617-b5aa-ca378f2a41ed"
+		name="APELLIDO">
+		</var>
+		<var
+		id="333f5d62-569c-4e67-a832-785e0035ca9e"
+		name="NOMBRE">
 		</var>
 	</variables>
 </repository>

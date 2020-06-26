@@ -23,6 +23,16 @@ mode="Global">
 	namespace="RxDemoDesktop.DB_Management">
 	</codegen>
 	<variables>
+		<var
+		id="16904046-0dd5-41ea-9ff7-7c6ab6005269"
+		name="NOMBRE">
+			Karina
+		</var>
+		<var
+		id="12f221f8-a850-491f-9424-17b9f778cd50"
+		name="APELLIDO">
+			Masoko
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -522,6 +532,10 @@ KKKKACiiigAooooA/9k=
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="NOMBRE">
+				</binding>
 			</bindings>
 		</keysequenceitem>
 		<mouseitem
@@ -769,6 +783,10 @@ ZozRRQBLb/69/wDcX+bVYoooAan3n/3v6CnUUUAFFFFABRRRQAUUUUAFFFFAH//Z
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="APELLIDO">
+				</binding>
 			</bindings>
 		</keysequenceitem>
 		<mouseitem

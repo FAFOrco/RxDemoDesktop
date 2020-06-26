@@ -41,6 +41,8 @@ namespace RxDemoDesktop.DB_Management
         /// </summary>
         public AddDeleteRecording()
         {
+            NOMBRE = "Karina";
+            APELLIDO = "Masoko";
         }
 
         /// <summary>
@@ -52,6 +54,26 @@ namespace RxDemoDesktop.DB_Management
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable NOMBRE.
+        /// </summary>
+        [TestVariable("16904046-0dd5-41ea-9ff7-7c6ab6005269")]
+        public string NOMBRE
+        {
+            get { return repo.NOMBRE; }
+            set { repo.NOMBRE = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable APELLIDO.
+        /// </summary>
+        [TestVariable("12f221f8-a850-491f-9424-17b9f778cd50")]
+        public string APELLIDO
+        {
+            get { return repo.APELLIDO; }
+            set { repo.APELLIDO = value; }
+        }
 
 #endregion
 
@@ -87,16 +109,16 @@ namespace RxDemoDesktop.DB_Management
             repo.RxMainFrame.RxTabStandard.FirstName.Click(Location.CenterLeft);
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Karina'.", new RecordItemIndex(2));
-            Keyboard.Press("Karina", 10);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$NOMBRE'.", new RecordItemIndex(2));
+            Keyboard.Press(NOMBRE, 10);
             Delay.Milliseconds(40);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.LastName' at CenterLeft.", repo.RxMainFrame.RxTabStandard.LastNameInfo, new RecordItemIndex(3));
             repo.RxMainFrame.RxTabStandard.LastName.Click(Location.CenterLeft);
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'Masoko'.", new RecordItemIndex(4));
-            Keyboard.Press("Masoko", 10);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$APELLIDO'.", new RecordItemIndex(4));
+            Keyboard.Press(APELLIDO, 10);
             Delay.Milliseconds(40);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'RxMainFrame.RxTabStandard.Abrir' at Center.", repo.RxMainFrame.RxTabStandard.AbrirInfo, new RecordItemIndex(5));
