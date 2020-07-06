@@ -96,6 +96,10 @@ namespace RxDemoDesktop
             StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("%UserProfile%\\Desktop\\RxDemoApp.exe", "", "", false, RunAppFlags.NoElevation));
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'RxMainFrame'.", repo.RxMainFrame.SelfInfo, new RecordItemIndex(1));
+            repo.RxMainFrame.Self.EnsureVisible();
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

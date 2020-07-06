@@ -48,6 +48,26 @@ mode="Desktop">
 			<args>
 			</args>
 		</runapprecorditem>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="52dacf7e-e1d3-4207-afe5-855994024642">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="deab196d-2298-450b-89bd-7e8e12fc3f06"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='RxMainFrame']
+				</path>
+			</info>
+			<arguments
+			id="b9831b97-52d2-4569-93eb-ed73bd07adef">
+			</arguments>
+		</invokeactionrecorditem>
 	</recorditems>
 	<repository
 	id="c72dd101-a1fb-45bd-ba75-76b411c98590"
