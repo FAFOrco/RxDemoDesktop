@@ -93,7 +93,7 @@ namespace RxDemoDesktop
             Init();
 
             Report.Log(ReportLevel.Info, "Application", "Run application '%UserProfile%\\Desktop\\RxDemoApp.exe' in normal mode. Return value bound to $StartAutProcessIDVar.", new RecordItemIndex(0));
-            StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("%UserProfile%\\Desktop\\RxDemoApp.exe", "", "", false, RunAppFlags.NoElevation));
+            StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("%UserProfile%\\Desktop\\RxDemoApp.exe", "", "", false));
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'RxMainFrame'.", repo.RxMainFrame.SelfInfo, new RecordItemIndex(1));
